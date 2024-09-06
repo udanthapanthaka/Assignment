@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>case1</title>
+
+    <style>
+      body > section {
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+      }
+      body > section:first-child {
+        background-color: red;
+        left: 0;
+        top: 0;
+      }
+      body > section:nth-child(2) {
+        background-color: green;
+        top: 0;
+        right: 0;
+      }
+      body > section:nth-child(3) {
+        background-color: rgb(228, 159, 19);
+        bottom: 0;
+        left: 0;
+      }
+      body > section:nth-child(4) {
+        background-color: rgb(237, 52, 173);
+        bottom: 0;
+        right: 0;
+      }
+      body > section > div:first-child {
+        background-color: white;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 100%;
+      }
+
+      body > section > div:nth-child(2) {
+        background-color: red;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      body > div > div:first-child {
+        background-color: white;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+      }
+      body > div > div:nth-child(2) {
+        background-color: red;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-radius: 100%;
+        margin: auto;
+      }
+
+      .corner {
+        background-color: white;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+      }
+      #corner1 {
+        top: calc(-150px / 2);
+        left: calc(-150px / 2);
+      }
+
+      #corner2 {
+        top: calc(-150px / 2);
+        right: calc(-150px / 2);
+      }
+
+      #corner3 {
+        bottom: calc(-150px / 2);
+        left: calc(-150px / 2);
+      }
+
+      #corner4 {
+        bottom: calc(-150px / 2);
+        right: calc(-150px / 2);
+      }
+
+      #corner5 {
+        right: 0;
+        left: 0;
+        top: calc(-150px / 2);
+        margin: auto;
+      }
+
+      #corner6 {
+        right: 0;
+        left: 0;
+        bottom: calc(-150px / 2);
+        margin: auto;
+      }
+      body {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id="corner1" class="corner"></div>
+    <div id="corner2" class="corner"></div>
+    <div id="corner3" class="corner"></div>
+    <div id="corner4" class="corner"></div>
+    <div id="corner5" class="corner"></div>
+    <div id="corner6" class="corner"></div>
+  </body>
+</html>
